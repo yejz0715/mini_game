@@ -4,29 +4,36 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="style.css" />
-        <script src="index.js"></script>
+
         <title>TicTacToe</title>
     </head>
     <body>
-        <label id="title">틱택토 게임</label>
-        <table>
-            <tr id="line_one">
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr id="line_two">
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr id="line_three">
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </table>
-        <button id="reset_button">reset</button>
-        <label id="result_message"></label>
+        <div id="container">
+            <label id="title">TIC - TAC - TOE</label>
+            <div id="current-message">
+                <label id="current-turn-message">your turn</label>
+                <label id="current-turn">X</label>
+            </div>
+            <table>
+                <tr id="line-one">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr id="line-two">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr id="line-three">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <button id="reset-button">reset</button>
+            <label id="result-message"></label>
+        </div>
+        <script src="index.js"></script>
     </body>
 </html>
