@@ -1,0 +1,57 @@
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1.5rem 0;
+}
+#current-message {
+    display: flex;
+    flex-direction: row;
+    width: 8.75rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+#current-turn {
+    padding-left: 0.625rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: green;
+}
+
+table {
+    margin: 2.5rem 0;
+    border-collapse: collapse;
+    border-style: hidden;
+}
+table td {
+    width: 9.375rem;
+    height: 6.25rem;
+    padding: 0.5rem;
+    border: 0.3125rem solid green;
+    font-size: 3.125rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+button {
+    width: 10.625rem;
+    height: 3.125rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-color: white;
+    color: green;
+    border-radius: 1.25rem;
+    box-shadow: 0.125rem 0.125rem 0.125rem gray;
+    cursor: pointer;
+}
+
+#result-message {
+    font-size: 2.5rem;
+    margin-top: 40px;
+    font-weight: bold;
+}
