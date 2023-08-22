@@ -6,16 +6,17 @@ div {
 #title {
     font-size: 2rem;
     font-weight: bold;
-    margin: 1.5rem 0;
+    margin-top: 1.5rem;
 }
 #current-message {
     display: flex;
     flex-direction: row;
-    width: 8.75rem;
     font-size: 1.5rem;
     font-weight: 400;
+    margin-bottom: 5px;
 }
 #current-turn {
+    width: 2.2rem;
     padding-left: 0.625rem;
     font-size: 1.8rem;
     font-weight: bold;
@@ -23,7 +24,7 @@ div {
 }
 
 table {
-    margin: 2.5rem 0;
+    margin-bottom: 2.5rem;
     border-collapse: collapse;
     border-style: hidden;
 }

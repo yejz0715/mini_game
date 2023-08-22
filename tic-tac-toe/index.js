@@ -1,9 +1,9 @@
-const lineOne = document.getElementById("line-one");
-const lineTwo = document.getElementById("line-two");
-const lineThree = document.getElementById("line-three");
-const resetButton = document.getElementById("reset-button");
-const resultMessage = document.getElementById("result-message");
-const currentTurn = document.getElementById("current-turn");
+const lineOne = document.querySelector("#line-one");
+const lineTwo = document.querySelector("#line-two");
+const lineThree = document.querySelector("#line-three");
+const resetButton = document.querySelector("#reset-button");
+const resultMessage = document.querySelector("#result-message");
+const currentTurn = document.querySelector("#current-turn");
 
 const board = [lineOne, lineTwo, lineThree];
 const tdBoxes = [[], [], []];
