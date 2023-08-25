@@ -1,9 +1,89 @@
+body {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
 #container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+#title {
+    margin-bottom: 2.3rem;
+}
+
+#input-numbers input {
+    width: 9rem;
+    height: 9rem;
+    margin-right: 2.5rem;
+    margin-bottom: 2.1875rem;
+    background-image: url("./assets/background_baseball.jpg");
+    background-size: cover;
+    border: none;
+    border-radius: 100%;
+    font-size: 3.125rem;
+    font-weight: bold;
+    color: #760100;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+}
+
+#input-numbers #third-number {
+    margin-right: 0;
+}
+
 .num-button {
-    border: 1px solid black;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 2.4rem;
+    background-color: white;
+    border: 0.0313rem solid gray;
+    border-radius: 1.25rem;
+    box-shadow: 0.0625rem 0.0625rem 0.0625rem 0.0625rem gray;
+    font-size: 1.25rem;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+}
+
+#onclick-buttons button {
+    width: 4.6875rem;
+    height: 2.375rem;
+    margin-left: 0.375rem;
+    background-color: white;
+    border: 0.0625rem solid gray;
+    border-radius: 0.5rem;
+    box-shadow: 0.125rem 0.125rem 0.125rem gray;
+    font-size: 1rem;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+}
+#list {
+    width: 15.325rem;
+    height: 100%;
+    padding: 0.3125rem 1.875rem;
+    margin-top: 4rem;
+    border: 0.0625rem solid gray;
+    border-radius: 1.25rem;
+}
+
+#list h3 {
+    margin-top: 0.3125rem;
+    text-align: center;
+}
+
+#num-scores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#num-score {
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-align: center;
 }

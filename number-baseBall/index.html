@@ -8,8 +8,8 @@
     </head>
     <body>
         <div id="container">
-            <h2 id="title">숫자야구</h2>
-            <div>
+            <h2 id="title">number baseball game</h2>
+            <div id="input-numbers">
                 <input id="first-number" type="number" readonly /><input
                     id="second-number"
                     type="number"
@@ -28,13 +28,19 @@
                 <button class="num-button">8</button>
                 <button class="num-button">9</button>
             </div>
-            <div>
-                <button id="random-button">random</button>
-                <button id="reset-button">reset</button>
+            <div id="onclick-buttons">
+                <button id="restart-button" onClick="handleGameStart()">
+                    restart
+                </button>
+                <button id="delete-button" onClick="handleDelete()">
+                    delete
+                </button>
             </div>
-            <div id="list">
-                <h3>히스토리</h3>
-            </div>
+            <h1 id="success-message"></h1>
+        </div>
+        <div id="list">
+            <h3>history</h3>
+            <div id="num-scores"></div>
         </div>
         <script src="index.js"></script>
     </body>
