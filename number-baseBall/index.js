@@ -2,6 +2,7 @@ const numButtons = document.querySelector("#num-buttons");
 const inputNumbers = document.querySelector("#input-numbers");
 const numScores = document.querySelector("#num-scores");
 const successMessage = document.querySelector("#success-message");
+
 const inputArr = [];
 let checkInputNum = [];
 const randomArr = Array(3);
@@ -63,13 +64,13 @@ const handleNumCheck = (target) => {
     if (checkInputNum.length === 3) {
         //비교함수
         const [sCnt, bCnt] = handleCompare();
-
+        const numScore = document.createElement("label");
+        numScores.appendChild(numScore);
         if (sCnt === 3) {
             successMessage.textContent = `${sumCount}번만에 성공했습니다.!`;
             return;
         }
-
-        numScores.innerHTML += `<label id="num-score">${checkInputNum[0]}${checkInputNum[1]}${checkInputNum[2]} S:${sCnt} B:${bCnt}</label>`;
+        numScore.innerHTML = `${checkInputNum[0]}${checkInputNum[1]}${checkInputNum[2]} S:${sCnt} B:${bCnt}`;
         handleReset();
         sumCount++;
         return;
