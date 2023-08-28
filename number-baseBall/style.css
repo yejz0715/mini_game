@@ -14,9 +14,10 @@ body {
 }
 
 #input-numbers input {
-    width: 9rem;
+    width: 8.3rem;
     height: 9rem;
     margin-right: 2.5rem;
+    padding-left: 0.7rem;
     margin-bottom: 2.1875rem;
     background-image: url("./assets/background_baseball.jpg");
     background-size: cover;
