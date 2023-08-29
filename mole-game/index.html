@@ -3,7 +3,51 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="./style.css" />
+        <title>mole-game</title>
     </head>
-    <body></body>
+
+    <body>
+        <div id="root">
+            <h2>mole game</h2>
+
+            <div id="content">
+                <div class="mole-box">
+                    <div class="mole hidden-mole"></div>
+                </div>
+                <div class="mole-box">
+                    <div class="mole hidden-mole"></div>
+                </div>
+                <div class="mole-box">
+                    <div class="mole hidden-mole"></div>
+                </div>
+
+                <div class="mole-box">
+                    <div class="mole hidden-mole"></div>
+                </div>
+                <div class="mole-box">
+                    <div class="mole hidden-mole"></div>
+                </div>
+                <div class="mole-box">
+                    <div class="mole hidden-mole"></div>
+                </div>
+
+                <div class="mole-box">
+                    <div class="mole hidden-mole"></div>
+                </div>
+                <div class="mole-box">
+                    <div class="mole hidden-mole"></div>
+                </div>
+                <div class="mole-box">
+                    <div class="mole hidden-mole"></div>
+                </div>
+            </div>
+            <button id="start-button" onclick="gameStart()">start</button>
+            <div id="under-box">
+                <label id="game-timer">남은 시간: 60초</label>
+                <label id="game-score">점수: 0점</label>
+            </div>
+        </div>
+        <script src="./index.js"></script>
+    </body>
 </html>
