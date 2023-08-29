@@ -1,0 +1,79 @@
+#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#content {
+    display: grid;
+    grid-template-rows: 12.5rem 12.5rem 12.5rem;
+    grid-template-columns: 12.5rem 12.5rem 12.5rem;
+    cursor: url("./assets/images/hammer.png") 20 30, auto;
+}
+.mole-box {
+    position: relative;
+    width: 12.5rem;
+    height: 12.5rem;
+    background-image: url("./assets/images/mole-none.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 0.0625rem solid black;
+    overflow: hidden;
+}
+
+.mole {
+    position: absolute;
+    bottom: 0rem;
+    width: 6.25rem;
+    height: 12.5rem;
+    left: 3.125rem;
+    background-image: url("./assets/images/mole.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: bottom 1s;
+}
+
+.death-mole {
+    width: 6.25rem;
+    height: 12.5rem;
+    left: 3.125rem;
+    background-image: url("./assets/images/mole-hit.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transform: rotate(180deg);
+}
+
+.hidden-mole {
+    bottom: -12.5rem;
+}
+
+#start-button {
+    width: 10.625rem;
+    height: 3rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 1.25rem;
+    box-shadow: 0.125rem 0.125rem 0.125rem gray;
+    margin-top: 0.875rem;
+    cursor: pointer;
+}
+
+#under-box {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.4rem;
+}
+
+#game-timer {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#game-score {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
