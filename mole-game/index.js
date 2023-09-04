@@ -6,6 +6,7 @@ let score = 0;
 let randomSecond = 0;
 let prevIndex = -1;
 let isRunningGame = false;
+let isReset = false;
 
 for (let i = 0; i < 9; i++) {
     moles.push(moleList[i]);
@@ -17,8 +18,10 @@ const gameStart = () => {
         //진행중일때
         return;
     }
+
     handleReset();
     isRunningGame = true;
+    ssReset = false;
     gameStartTimer();
 };
 
@@ -27,9 +30,14 @@ const gameStartTimer = () => {
     movesMole();
     const interval = setInterval(function () {
         //고정된 시간동안 함수 반복 실행
+
         timer--;
         gameTimer.textContent = `남은시간: ${timer}초`;
-
+        if (isReset === true) {
+            clearInterval(interval);
+            gameTimer.textContent = `남은시간: 60초`;
+            isReset = false;
+        }
         if (timer === 0) {
             clearInterval(interval); //함수 실행 중지
             gameTimer.textContent = `남은시간: 0초`;
@@ -96,11 +104,18 @@ const scoreHandler = () => {
     gameScore.textContent = `점수: ${score}점`;
 };
 
+const gameReset = () => {
+    isReset = true;
+    isRunningGame = false;
+    handleReset();
+};
+
 const handleReset = () => {
     score = 0;
     randomSecond = 0;
     prevIndex = -1;
-    gameScore.textContent = `점수: 0점`;
+    gameScore.textContent = "점수: 0점";
+    gameTimer.textContent = "남은시간: 60초";
 };
 
 for (let i = 0; i < 9; i++) {
