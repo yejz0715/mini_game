@@ -23,6 +23,7 @@
 ### 숫자 야구 게임
 0부터 9까지 서로 다른 수로 이루어진 세 자릿수를 맞추는 게임입니다. 같은 수가 같은 자리에 있으면 스트라이크(S), 숫자만 같으면 볼(B).
 
+<img src="https://github.com/yejz0715/mini_game/assets/86754632/9ce006a2-bdbd-4470-bdbe-fef221cc16f7" width="650px" height="400px" alt="number-ball"></img>
 <br/><br/>
 
 ### 두더지 게임
