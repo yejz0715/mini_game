@@ -28,5 +28,7 @@
 
 ### 두더지 게임
 60초동안 3x3 게임판에 두더지가 나오면 잡는 게임입니다. 
+<img  width="650px" height="400px" alt="mole-game" src="https://github.com/yejz0715/mini_game/assets/86754632/14da356b-6484-42ea-ac84-8a0f746730d2">
+
 
 <br/><br/>
